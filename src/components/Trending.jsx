@@ -1,6 +1,6 @@
-import React from "react";
+import { React, useEffect, useState } from "react";
 
-const InfoCard = ({ image, title, body }) => {
+const Trending = ({ image, title, body }) => {
   return (
     <div className="card-container">
       <div className="image-container">
@@ -21,4 +21,4 @@ const InfoCard = ({ image, title, body }) => {
   );
 };
 
-export default InfoCard;
+export default Trending;

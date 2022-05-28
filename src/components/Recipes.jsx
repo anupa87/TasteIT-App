@@ -16,7 +16,7 @@ const Recipes = () => {
     setLoading(true);
     Promise.all([getRecipes(), getCountries()]).then(function (results) {
       const recipesData = results[0];
-      const countriesData = results[1]; // because countries starts from first index
+      const countriesData = results[1];
 
       setRecipies(recipesData.data);
       setCountries(countriesData.data);
@@ -30,18 +30,20 @@ const Recipes = () => {
   }
 
   return (
-    <div>
-      {recipes.map((recipe) => (
-        <RecipeCard
-          key={recipe.id}
-          data={recipe}
-          country={countries.find(
-            (country) => country.alpha2Code === recipe.country_code
-          )}
-          {...recipe}
-        />
-      ))}
-    </div>
+    <main className="main-container">
+      <div>
+        {recipes.map((recipe) => (
+          <RecipeCard
+            key={recipe.id}
+            data={recipe}
+            country={countries.find(
+              (country) => country.alpha2Code === recipe.country_code
+            )}
+            {...recipe}
+          />
+        ))}
+      </div>
+    </main>
   );
 };
 

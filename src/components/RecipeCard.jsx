@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-const RecipeCard = ({ name, description, img, data, country }) => {
+const RecipeCard = ({ name, description, image, data, country }) => {
   return (
     <div className="recipe-card">
       <h3>{name}</h3>
