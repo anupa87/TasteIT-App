@@ -15,22 +15,21 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/recipes">Browse recipes</Link>
+              <Link to="/browse_recipes">Browse recipes</Link>
             </li>
             <li>
-              <Link to="/admin">Add recipes</Link>
+              <Link to="/add_recipes">Add recipes</Link>
             </li>
             <li>
-              <Link to="/contact">Our stories</Link>
+              <Link to="/our_stories">Our stories</Link>
             </li>
           </ul>
         </nav>
       </div>
-      <div className="navbar-login">
-        <a href="login">Log in</a>
+      <div className="navbar-admin">
+        <a href="register">Register</a>
         <div />
-        <div></div>
-        <a href="sign-up">Sign-up</a>
+        <a href="login">Login</a>
       </div>
     </div>
   );

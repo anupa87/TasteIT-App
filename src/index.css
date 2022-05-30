@@ -19,7 +19,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem;
+  border-bottom: 1px solid silver;
+}
+
+.logo {
+  color: green;
 }
 
 .header-container ul {
@@ -28,36 +33,51 @@ body {
 
 .header-container ul li {
   display: inline-block;
-  margin: 0 1rem;
+  margin: 1rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.header-container ul li:hover {
-  border-bottom: 1px solid var(--color-golden);
+.header-container ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
 }
-.navbar-login {
+
+.header-container ul li a:hover {
+  border-bottom: 1px solid goldenrod;
+}
+.navbar-admin {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: rem;
+}
+.navbar-admin a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
   padding: 1rem;
 }
-.navbar-login a:hover {
-  border-bottom: 1px solid var(--color-golden);
-}
 
-.navbar-login div {
+.navbar-admin a:hover {
+  border-bottom: 1px solid goldenrod;
+}
+.navbar-admin div {
   width: 1px;
   height: 30px;
-  background-color: var(--color-grey);
+  background-color: gray;
 }
 
+/* .main {
+  max-height: 85vh;
+} */
 .intro-video {
-  max-width: fit-content;
-  height: 500px;
-}
-
-.main-container {
-  height: 85vh;
+  position: relative;
+  width: 100vw;
+  min-height: 30vh;
+  max-height: 55vh;
+  object-fit: cover;
 }
 
 .app-description {
@@ -89,4 +109,28 @@ body {
   text-align: center;
   font-size: small;
   justify-content: center;
+}
+
+/* FORM COMPONENT */
+form {
+  padding-top: 5rem;
+  text-align: center;
+}
+label {
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+}
+form div {
+  margin: 1rem 0;
+}
+input,
+textarea,
+select {
+  background: #f4f4f4;
+  border: 1px solid rgb(102, 102, 102);
+  width: 450px;
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
 }

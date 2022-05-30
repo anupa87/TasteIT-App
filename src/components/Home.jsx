@@ -13,7 +13,11 @@ const Home = () => {
         </video>
       </div>
       <div className="app-description">
-        <p>TasteIT is a recipe app made with React</p>
+        <p>
+          TasteIT is a recipe app made with React where user can get recipies
+          from around the world and tell the stories behind the food. Registered
+          user can also add their recipes to the recipe bank
+        </p>
       </div>
       <div className="card-container">
         <div className="card">
