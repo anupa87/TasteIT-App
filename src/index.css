@@ -15,25 +15,28 @@ body {
 }
 
 .header-container {
-  height: 10vh;
+  /* height: 10vh; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem;
+  align-items: center;
+  padding: 1rem;
   border-bottom: 1px solid silver;
 }
 
-.logo {
+h1 {
   color: green;
 }
 
 .header-container ul {
   list-style: none;
+  align-items: center;
+  padding: 1rem;
 }
 
 .header-container ul li {
   display: inline-block;
-  margin: 1rem;
+  margin: 0 1rem;
   cursor: pointer;
   text-decoration: none;
 }
@@ -50,8 +53,7 @@ body {
 .navbar-admin {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: rem;
+  padding: 1rem;
 }
 .navbar-admin a {
   cursor: pointer;
@@ -69,9 +71,6 @@ body {
   background-color: gray;
 }
 
-/* .main {
-  max-height: 85vh;
-} */
 .intro-video {
   position: relative;
   width: 100vw;
@@ -100,37 +99,49 @@ body {
   line-height: 1.5;
 }
 
+.card {
+  width: 250px;
+  padding: 1rem;
+  border: 1px solid darkcyan;
+  box-shadow: 2px 3px 4px black;
+  border-radius: 3px;
+  line-height: 1.75rem;
+}
+
 .footer-container {
   background-color: #333;
   color: white;
-  height: 5vh;
   display: flex;
   flex-direction: column;
   text-align: center;
   font-size: small;
   justify-content: center;
+  padding: 2rem;
 }
-
+h2 {
+  padding-bottom: 2rem;
+}
 /* FORM COMPONENT */
 form {
-  padding-top: 5rem;
+  padding: 4rem;
   text-align: center;
 }
 label {
-  width: 200px;
+  width: 150px;
   display: inline-block;
   text-align: left;
 }
 form div {
   margin: 1rem 0;
 }
+
 input,
 textarea,
 select {
   background: #f4f4f4;
   border: 1px solid rgb(102, 102, 102);
   width: 450px;
-  padding: 0.5rem;
+  padding: 0.75rem;
   border-radius: 3px;
   font-size: 0.8rem;
 }

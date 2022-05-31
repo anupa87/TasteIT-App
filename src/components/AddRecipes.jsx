@@ -47,6 +47,7 @@ const AddRecipes = () => {
   return (
     <main className="main-container">
       <form onSubmit={submitData} className="form">
+        <h2>Add your recipe</h2>
         <div>
           <label htmlFor="name">Food name:</label>
           <input type="text" name="name" id="name" onChange={changeData} />

@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import bgVideo from "../assets/bgVideo.mp4";
-import Trending from "./Trending";
 
 const Home = () => {
   return (
@@ -12,55 +11,54 @@ const Home = () => {
           <source src={bgVideo} type="video/mp4" />
         </video>
       </div>
-      <div className="app-description">
+      {/* <div className="app-description">
         <p>
           TasteIT is a recipe app made with React where user can get recipies
           from around the world and tell the stories behind the food. Registered
           user can also add their recipes to the recipe bank
         </p>
-      </div>
+      </div> */}
       <div className="card-container">
         <div className="card">
-          <div className="image-container">
-            <img src="" alt="" />
-          </div>
+          <div className="image-container"></div>
           <div className="card-title">
             <h3>Browse recipes</h3>
           </div>
           <div className="card-body">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>
+              Are you hungry? Are you looking for some yoummy food to try? Find
+              food of your taste from our recipes
+            </p>
           </div>
           <div className="btn see-more-btn">
             <button>
-              <a href="/Recipes.jsx">See more</a>
+              <a href="/browse_recipes">See more</a>
             </button>
           </div>
         </div>
         <div className="card">
-          <div className="image-container">
-            <img src="" alt="" />
-          </div>
+          <div className="image-container"></div>
           <div className="card-title">
-            <h3>Add recipes</h3>
+            <h3>Recipes bank</h3>
           </div>
           <div className="card-body">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>
+              Be the part of our community! Add your recipe to our recipe bank.
+            </p>
           </div>
           <div className="btn see-more-btn">
             <button>
-              <a href="/Admin.jsx">See more</a>
+              <a href="/add_recipes">See more</a>
             </button>
           </div>
         </div>
         <div className="card">
-          <div className="image-container">
-            <img src="" alt="" />
-          </div>
+          <div className="image-container"></div>
           <div className="card-title">
-            <h3>More about us</h3>
+            <h3>Our stories</h3>
           </div>
           <div className="card-body">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Do you want to know about us?</p>
           </div>
           <div className="btn see-more-btn">
             <button>
