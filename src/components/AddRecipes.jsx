@@ -42,7 +42,7 @@ const AddRecipes = () => {
     setIngredients([...ingredients, newIng]);
   };
   const submitData = (e) => {
-    axios.post("http://localhost:3001/recipies", data);
+    axios.post("http://localhost:3000/recipies", data);
   };
   return (
     <main className="main-container">

@@ -13,20 +13,22 @@ const BrowseRecipes = () => {
     setSearch(e.target.value);
   };
 
-  const getRecipes = () => axios.get("http://localhost:3001/recipies");
+  const getRecipes = () => axios.get("http://localhost:3000/recipies");
   const getCountries = () => axios.get("https://restcountries.com/v2/all");
 
   useEffect(() => {
     setLoading(true);
-    Promise.all([getRecipes(), getCountries()]).then(function (results) {
-      const recipesData = results[0];
-      const countriesData = results[1];
-
-      setRecipes(recipesData);
-      setCountries(countriesData);
-      setLoading(false);
-    });
+    Promise.all([getRecipes(), getCountries()])
+      .then(function (results) {
+        const recipesData = results[0].data;
+        const countriesData = results[1].data;
+        setRecipes(recipesData);
+        setCountries(countriesData);
+        setLoading(false);
+      })
+      .catch((err) => console.log(err));
   }, []);
+
   if (loading) {
     return <p>Loading...</p>;
   }
@@ -43,13 +45,12 @@ const BrowseRecipes = () => {
       </div>
       <div className="recipes-grid">
         <ul>
-          {recipes().map((recipe) => (
+          {recipes.map((recipe) => (
             <RecipeCard
               key={recipe.id}
-              id={recipe.id}
-              recipe={recipe}
+              data={recipe}
               country={countries.find(
-                (country) => country.alpha2Code === recipe.origin
+                (country) => country.alpha2Code === recipe.country_code
               )}
               {...recipe}
             />
