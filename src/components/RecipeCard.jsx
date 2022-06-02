@@ -1,18 +1,26 @@
-import React from "react";
-
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const RecipeCard = ({ name, desc, img, data, country }) => {
+const RecipeCard = ({ name, desc, img, country_code }) => {
+  const [flag, setFlag] = useState(
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/No_flag.svg/225px-No_flag.svg.png?20220314051100"
+  );
+
+  useEffect(() => {
+    axios
+      .get("https://restcountries.com/v3.1/name/" + country_code)
+      .then((res) => setFlag(res.data[0].flags.svg));
+  }, []);
+
   return (
     <div className="recipe-card">
       <img className="recipe-card-image" src={img} alt={name} />
+      <img className="recipe-card-flag" src={flag} alt={flag} />
       <h3 className="recipe-card-title">{name}</h3>
       <p className="recipe-card-content">{desc}</p>
-      <img className="recipe-card-flag" src={country.flag} alt={country.name} />
       <div className="recipe-card-link">
-        <Link to={name} state={{ data: data, country: country }}>
-          See more
-        </Link>
+        <Link to={`${name}`}>See more</Link>
       </div>
     </div>
   );

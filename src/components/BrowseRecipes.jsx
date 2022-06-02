@@ -12,12 +12,11 @@ const BrowseRecipes = () => {
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
-  const getRecipes = () => axios.get("http://localhost:3001/recipies");
+  const getRecipes = () => axios.get("http://localhost:3002/recipies");
   const getCountries = () => axios.get("https://restcountries.com/v2/all");
 
   useEffect(() => {
     setLoading(true);
-    console.log("Hi");
     Promise.all([getRecipes(), getCountries()])
       .then(function (results) {
         const recipesData = results[0].data;

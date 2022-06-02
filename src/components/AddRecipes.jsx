@@ -6,7 +6,7 @@ const AddRecipes = () => {
     name: "",
     author: "",
     desc: "",
-    country_code: "",
+    country: "",
     img: "",
     ing: [],
     ins: "",
@@ -18,7 +18,7 @@ const AddRecipes = () => {
 
   useEffect(() => {
     axios.get("https://restcountries.com/v2/all").then((res) => {
-      console.log(res.data);
+      // console.log(res.data);
       setCountries(res.data);
     });
   }, []);
@@ -45,7 +45,7 @@ const AddRecipes = () => {
   const submitData = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/recipies", data)
+      .post("http://localhost:3002/recipies", data)
       .then((res) => console.log(res))
       .catch((error) => console.log(error));
   };
