@@ -206,7 +206,7 @@ select {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem;
+  padding: 2.8rem;
 }
 .search-div {
   margin: 0 auto;
