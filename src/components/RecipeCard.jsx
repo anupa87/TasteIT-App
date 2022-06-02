@@ -20,7 +20,7 @@ const RecipeCard = ({ name, desc, img, country_code }) => {
       <h3 className="recipe-card-title">{name}</h3>
       <p className="recipe-card-content">{desc}</p>
       <div className="recipe-card-link">
-        <Link to={`${name}`}>See more</Link>
+        <Link to={`${name}`}>See more &gt; &gt;</Link>
       </div>
     </div>
   );

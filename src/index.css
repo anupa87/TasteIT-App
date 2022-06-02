@@ -12,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(253, 229, 229);
+  color: #333;
 }
 
 .header-container {
@@ -19,7 +20,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 1px 2px 4px #333;
 }
 
@@ -38,6 +39,7 @@ h1 {
   margin: 0 1rem;
   cursor: pointer;
   text-decoration: none;
+  font-size: larger;
 }
 
 .header-container ul li a {
@@ -78,10 +80,6 @@ h1 {
   object-fit: cover;
 }
 
-.app-description {
-  padding: 1rem;
-}
-
 .btn-default {
   width: 200px;
   height: 100px;
@@ -95,7 +93,9 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem;
+  margin: 0 8rem;
   line-height: 1.5;
 }
 
@@ -109,13 +109,19 @@ h1 {
   line-height: 1.5rem;
 }
 
-.card-cotent {
+.card-content {
   padding: 1rem 0;
 }
 
-.see-more-btn {
-  text-decoration: none;
+.see-more {
+  margin-left: 13rem;
 }
+
+.see-more a {
+  text-decoration: none;
+  color: green;
+}
+
 .footer-container {
   background-color: rgb(108, 133, 108);
   color: white;
@@ -131,7 +137,7 @@ h2 {
 }
 /* FORM COMPONENT */
 form {
-  padding: 3rem;
+  padding: 2.25rem;
   text-align: center;
 }
 label {
@@ -151,7 +157,7 @@ select {
   width: 450px;
   padding: 0.75rem;
   border-radius: 3px;
-  font-size: 0.8rem;
+  font-size: 14px;
 }
 
 /* RecipeCard */
@@ -161,7 +167,7 @@ select {
   border: 1px solid silver;
   border-radius: 3px;
   box-shadow: 3px 3px 5px grey;
-  margin: 3rem;
+  margin: 3rem 4rem;
   padding: 1rem;
   position: relative;
   line-height: 1.75rem;
@@ -188,13 +194,19 @@ select {
 .recipe-card-content {
   padding: 1rem;
 }
+
+.recipe-card-link a {
+  text-decoration: none;
+  color: green;
+}
 /* browse_recipe_page */
 
 .recipes-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem;
+  align-items: center;
+  padding: 3rem;
 }
 .search-div {
   margin: 0 auto;
@@ -204,5 +216,6 @@ select {
 .recipes-grid {
   padding: 2rem 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

@@ -25,14 +25,12 @@ const Home = () => {
           </div>
           <div className="card-content">
             <p>
-              Are you hungry? Are you looking for some yoummy food to try? Find
-              food of your taste from our recipes
+              Are you looking for yummy recipes? Here are some of the best
+              recipes from around the world.
             </p>
           </div>
-          <div className="btn see-more-btn">
-            <button>
-              <a href="/browse_recipes">See more</a>
-            </button>
+          <div className="see-more">
+            <a href="/browse_recipes">See more &gt; &gt;</a>
           </div>
         </div>
         <div className="card">
@@ -45,10 +43,8 @@ const Home = () => {
               Be the part of our community! Add your recipe to our recipe bank.
             </p>
           </div>
-          <div className="btn see-more-btn">
-            <button>
-              <a href="/add_recipes">See more</a>
-            </button>
+          <div className="see-more">
+            <a href="/add_recipes">See more &gt; &gt;</a>
           </div>
         </div>
         <div className="card">
@@ -57,12 +53,10 @@ const Home = () => {
             <h3>Our stories</h3>
           </div>
           <div className="card-content">
-            <p>Do you want to know about us?</p>
+            <p>Here you can find more information about our program?</p>
           </div>
-          <div className="btn see-more-btn">
-            <button>
-              <a href="https://www.bc.fi">See more</a>
-            </button>
+          <div className="see-more">
+            <a href="https://www.bc.fi">See more &gt; &gt; </a>
           </div>
         </div>
       </div>

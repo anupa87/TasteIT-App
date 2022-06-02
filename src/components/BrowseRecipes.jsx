@@ -3,6 +3,7 @@ import axios from "axios";
 
 import RecipeCard from "./RecipeCard";
 
+
 const BrowseRecipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [countries, setCountries] = useState([]);
@@ -31,7 +32,7 @@ const BrowseRecipes = () => {
   if (loading) {
     return <p>Loading...</p>;
   }
-  return ( 
+  return (
     <div className="recipes-container">
       <div className="search-div">
         <input
@@ -42,7 +43,7 @@ const BrowseRecipes = () => {
         ></input>
       </div>
       <div>
-        <ul>
+        <ul className="recipes-grid">
           {recipes.map((recipe) => (
             <RecipeCard
               key={recipe.id}
@@ -60,4 +61,3 @@ const BrowseRecipes = () => {
 };
 
 export default BrowseRecipes;
-
