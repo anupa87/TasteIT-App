@@ -12,12 +12,12 @@ const BrowseRecipes = () => {
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
-
-  const getRecipes = () => axios.get("http://localhost:3000/recipies");
+  const getRecipes = () => axios.get("http://localhost:3001/recipies");
   const getCountries = () => axios.get("https://restcountries.com/v2/all");
 
   useEffect(() => {
     setLoading(true);
+    console.log("Hi");
     Promise.all([getRecipes(), getCountries()])
       .then(function (results) {
         const recipesData = results[0].data;
@@ -32,9 +32,8 @@ const BrowseRecipes = () => {
   if (loading) {
     return <p>Loading...</p>;
   }
-  return (
+  return ( 
     <div className="recipes-container">
-      <h2>Recipes from around the world</h2>
       <div className="search-div">
         <input
           type="search"
@@ -43,7 +42,7 @@ const BrowseRecipes = () => {
           placeholder="Search recipe..."
         ></input>
       </div>
-      <div className="recipes-grid">
+      <div>
         <ul>
           {recipes.map((recipe) => (
             <RecipeCard
@@ -62,3 +61,4 @@ const BrowseRecipes = () => {
 };
 
 export default BrowseRecipes;
+

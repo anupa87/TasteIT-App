@@ -15,13 +15,12 @@ body {
 }
 
 .header-container {
-  /* height: 10vh; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  border-bottom: 1px solid silver;
+  padding: 2rem;
+  box-shadow: 1px 2px 4px #333;
 }
 
 h1 {
@@ -94,22 +93,31 @@ h1 {
 .card-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem;
   line-height: 1.5;
 }
 
 .card {
-  width: 250px;
+  width: 350px;
+  height: 170px;
   padding: 1rem;
   border: 1px solid darkcyan;
-  box-shadow: 2px 3px 4px black;
+  box-shadow: 1px 1px 1px 1px rgb(114, 125, 136);
   border-radius: 3px;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
 }
 
+.card-cotent {
+  padding: 1rem 0;
+}
+
+.see-more-btn {
+  text-decoration: none;
+}
 .footer-container {
-  background-color: #333;
+  background-color: rgb(108, 133, 108);
   color: white;
   display: flex;
   flex-direction: column;
@@ -123,7 +131,7 @@ h2 {
 }
 /* FORM COMPONENT */
 form {
-  padding: 4rem;
+  padding: 3rem;
   text-align: center;
 }
 label {
@@ -144,4 +152,56 @@ select {
   padding: 0.75rem;
   border-radius: 3px;
   font-size: 0.8rem;
+}
+
+/* RecipeCard */
+.recipe-card {
+  width: 400px;
+  height: 450px;
+  border: 1px solid silver;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px grey;
+  margin: 3rem;
+  padding: 1rem;
+  position: relative;
+  line-height: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-card-image {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.recipe-card-flag {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+}
+
+.recipe-card-content {
+  padding: 1rem;
+}
+/* browse_recipe_page */
+
+.recipes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.search-div {
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.recipes-grid {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
 }

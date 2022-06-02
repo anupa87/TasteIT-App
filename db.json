@@ -18,12 +18,12 @@
         {
           "id": 2,
           "ingName": "processed cheese",
-          "quantity": "100 gm"
+          "quantity": "100 g"
         },
         {
           "id": 3,
-          "ingName": "mushroom",
-          "quantity": "4 "
+          "ingName": "mushroom ",
+          "quantity": "4"
         },
         {
           "id": 4,
@@ -43,7 +43,7 @@
         {
           "id": 7,
           "ingName": "dry yeast",
-          "quantity": "1 tbs"
+          "quantity": "1 tbsp"
         },
         {
           "id": 8,
@@ -72,11 +72,164 @@
         },
         {
           "id": 13,
-          "ingName": "water ",
+          "ingName": "water",
           "quantity": "as required"
         }
       ],
-      "instruction": "Take a dough kneading plate and add all-purpose flour to it. Next, add salt and baking powder in it and sieve the flour once. Then, make a well in the centre and add 1 teaspoon of oil to it. On the other hand, take a little warm water and mix the yeast in it along with 1 teaspoon of sugar. Mix well and keep aside for 10-15 minutes. The yeast will rise in the meantime. Once the yeast has risen, add it to the flour knead the dough nicely using some water. Keep this dough aside for 4-6 hours. Then knead the dough once again. Now, the pizza dough is ready. Preheat the oven at 180 degree Celsius. Now, is the time to make the pizza base when the dough is ready. Dust the space a little using dry flour and take a large amount of the pizza dough. Using a rolling pin, roll this dough into a nice circular base. (Note: Make sure that the circular base is even at all ends.) Once you have made the base, use a fork and prick the base with it so that the base doesn't rise and gets baked nicely. Put it into the preheated oven and bake it 10 minutes. Now, your pizza base is ready.Now, wash the capsicum and slice it thinly in a bowl. Then, peel the onions and cut thin slices of it as well in another bowl. And finally, cut tomatoes and mushrooms in the same manner. However, make sure that those tomatoes have less juice in them. Once all the veggies are done, Now, grate the processed and mozzarella cheese in separate bowls.Then, take the fresh pizza base and apply tomato ketchup all over. Spread half the processed cheese all over the base and evenly put the veggies all across the base. Once you have put all the veggies, put a thick layer of mozzarella cheese.Put this pizza base in a baking tray and place it inside the oven. Let the pizza bake 10 minutes at 250 degree Celsius. Once done, take out the baking tray and slice the pizza. Sprinkle oregano and chilli flakes as per your taste and serve hot. (Note: Make sure that the oven is preheated at 250 degree Celsius for 5 minutes at least."
+      "instruction": "Take a dough kneading plate and add all-purpose flour to it. Next, add salt and baking powder in it and sieve the flour once. Then, make a well in the centre and add 1 teaspoon of oil to it. On the other hand, take a little warm water and mix the yeast in it along with 1 teaspoon of sugar. Mix well and keep aside for 10-15 minutes. The yeast will rise in the meantime. Once the yeast has risen, add it to the flour knead the dough nicely using some water. Keep this dough aside for 4-6 hours. Then knead the dough once again. Now, the pizza dough is ready. Preheat the oven at 180 degree Celsius. Now, is the time to make the pizza base when the dough is ready. Dust the space a little using dry flour and take a large amount of the pizza dough. Using a rolling pin, roll this dough into a nice circular base. (Note: Make sure that the circular base is even at all ends.) Once you have made the base, use a fork and prick the base with it so that the base doesn't rise and gets baked nicely. Put it into the preheated oven and bake it 10 minutes. Now, your pizza base is ready.Now, wash the capsicum and slice it thinly in a bowl. Then, peel the onions and cut thin slices of it as well in another bowl. And finally, cut tomatoes and mushrooms in the same manner. However, make sure that those tomatoes have less juice in them. Once all the veggies are done, Now, grate the processed and mozzarella cheese in separate bowls.Then, take the fresh pizza base and apply tomato ketchup all over. Spread half the processed cheese all over the base and evenly put the veggies all across the base. Once you have put all the veggies, put a thick layer of mozzarella cheese.Put this pizza base in a baking tray and place it inside the oven. Let the pizza bake 10 minutes at 250 degree Celsius. Once done, take out the baking tray and slice the pizza. Sprinkle oregano and chilli flakes as per your taste and serve hot. (Note: Make sure that the oven is preheated at 250 degree Celsius for 5 minutes at least.",
+      "id": 1
+    },
+    {
+      "name": "Momo",
+      "author": "Anupa",
+      "des": "",
+      "country_code": "NP",
+      "img": "https://www.tiffinboxfood.com/wp-content/uploads/2020/03/chicken-momo-1.jpg",
+      "ing": [],
+      "ins": "",
+      "desc": "Momo is one of Nepal’s most popular dishes which can be eaten as an entree or as mains. It’s a dumpling filled with meat or vegetables and eaten with tomato pickle.",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingName": "all purpose flour",
+          "quantity": "1/2 cup"
+        },
+        {
+          "id": 2,
+          "ingName": "chicken (minced)",
+          "quantity": "500g"
+        },
+        {
+          "id": 3,
+          "ingName": "ginger and garlic paste",
+          "quantity": "3 tsp"
+        },
+        {
+          "id": 4,
+          "ingName": "  red onion, finely chopped",
+          "quantity": "1"
+        },
+        {
+          "id": 5,
+          "ingName": "coriander, finely chopped",
+          "quantity": "1/4 cup"
+        },
+        {
+          "id": 6,
+          "ingName": "ground coriander and cumin",
+          "quantity": "1/2 tsp each"
+        },
+        {
+          "id": 7,
+          "ingName": "turmeric",
+          "quantity": "1/4 tsp"
+        },
+        {
+          "id": 8,
+          "ingName": "green chilli, finely chopped (optional)",
+          "quantity": "1"
+        },
+        {
+          "id": 9,
+          "ingName": "vegetable oil or melted butter",
+          "quantity": "2 tbsp"
+        },
+        {
+          "id": 10,
+          "ingName": "salt",
+          "quantity": "to taste"
+        },
+        {
+          "id": 11,
+          "ingName": "mustard oil or any other oil",
+          "quantity": "1 tbsp"
+        },
+        {
+          "id": 12,
+          "ingName": "fenugreek seed",
+          "quantity": "1/4 tsp"
+        },
+        {
+          "id": 13,
+          "ingName": "ripe tomatoes",
+          "quantity": "500g"
+        },
+        {
+          "id": 14,
+          "ingName": "ground Sichuan pepper",
+          "quantity": "pinch"
+        },
+        {
+          "id": 15,
+          "ingName": "ground sesame",
+          "quantity": "2 tbsp"
+        }
+      ],
+      "instruction": "For the tomato pickle (achar), pour mustard oil into a small saucepan and place over medium heat. When the oil is hot add garlic and ginger, fry for a few seconds or until starting to turn light golden. Add fenugreek seed, dried chillies, jimbu, and stir for few more seconds until fenugreek is starting to turn golden. Add chopped tomatoes and cook for 10 minutes, stirring occasionally until reduced and starting to thicken. Set aside to cool, then blend until smooth.For the momos, place all ingredients in a large bowl mix to combine. Cover and set aside for 10 to 15 minutes to develop flavour.Place a steamer with water in the base over high heat. Lay out 6 wrappers on the bench, and moisten around the top edge of each wrapper using a wet finger. Place half a flat tablespoon of mixture in the centre of each wrapper, and almost fold in half. Gradually bring sides together from one end whilst making a few pleats in one side and curving the momo so it sits upright. Another traditional shape is a moneybag with a small steam vent in the centre of the top. Repeat with remaining wrappers and filling.Steam for 8-10 minutes, or until wonton wrappers are tender.  Serve immediately with tomato pickle or other condiments.",
+      "id": 2
+    },
+    {
+      "name": "Finnish Salmon Soup – Lohikeitto",
+      "author": "Sue Moran",
+      "desc": "Finnish Salmon Soup, or Lohikeitto, is a simple Nordic salmon chowder and a comforting 30 minute meal made with a light cream broth, melt-in-your-mouth chunks of salmon, and tons of fresh dill!\n",
+      "country_code": "",
+      "img": "https://theviewfromgreatisland.com/wp-content/uploads/2017/04/Finnish-Salmon-Soup-6404-March-18-2017.jpg",
+      "ing": [],
+      "ins": "",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingName": "skin-on salmon filet",
+          "quantity": "500 g"
+        },
+        {
+          "id": 2,
+          "ingName": "unsaltd butter",
+          "quantity": "4 tbsp"
+        },
+        {
+          "id": 3,
+          "ingName": "leek, trimmed, sliced, and well rinsed",
+          "quantity": "1 large"
+        },
+        {
+          "id": 4,
+          "ingName": "russet potatoes, peeled and diced",
+          "quantity": "500g"
+        },
+        {
+          "id": 5,
+          "ingName": "carrot, sliced",
+          "quantity": "1 large"
+        },
+        {
+          "id": 6,
+          "ingName": "fresh dill for garnish, finely chopped, divided",
+          "quantity": "1 cup"
+        },
+        {
+          "id": 7,
+          "ingName": "heavy cream",
+          "quantity": "1 cup"
+        },
+        {
+          "id": 8,
+          "ingName": "allspice",
+          "quantity": "1/4 tsp ( use more to taste)"
+        },
+        {
+          "id": 9,
+          "ingName": "salt and pepper",
+          "quantity": " to taste"
+        },
+        {
+          "id": 10,
+          "ingName": "water",
+          "quantity": "5 cups"
+        }
+      ],
+      "instruction": "Remove the skin from the salmon and cut into largish chunks. Remove any small pin bones and discard. Reserve the skin.\nMelt the butter in a soup pot and saute the leeks for 10 minutes, or until nice and soft.\nWhile the leeks are cooking, put 5 cups of water and the reserved fish skin in a saucepan and bring to a boil, turn down the heat and simmer gently for 10 minutes. Note: if you are using fish stock you can skip this step.\nStrain the broth and add to the pan with the leeks, along with the potatoes, carrots, and half of the fresh dill. Cook for another 10 minutes, or until the potatoes are just tender.\nAdd the salmon chunks to the soup along with the cream and allspice, and gently simmer on low heat until cooked through, just a few minutes. Add the remaining dill, and salt and pepper to taste.\n",
+      "id": 3
     }
   ]
 }

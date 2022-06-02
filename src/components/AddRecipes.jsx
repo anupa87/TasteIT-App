@@ -5,7 +5,7 @@ const AddRecipes = () => {
   const [data, setData] = useState({
     name: "",
     author: "",
-    des: "",
+    desc: "",
     country_code: "",
     img: "",
     ing: [],
@@ -18,6 +18,7 @@ const AddRecipes = () => {
 
   useEffect(() => {
     axios.get("https://restcountries.com/v2/all").then((res) => {
+      console.log(res.data);
       setCountries(res.data);
     });
   }, []);
@@ -42,7 +43,11 @@ const AddRecipes = () => {
     setIngredients([...ingredients, newIng]);
   };
   const submitData = (e) => {
-    axios.post("http://localhost:3000/recipies", data);
+    e.preventDefault();
+    axios
+      .post("http://localhost:3001/recipies", data)
+      .then((res) => console.log(res))
+      .catch((error) => console.log(error));
   };
   return (
     <main className="main-container">
