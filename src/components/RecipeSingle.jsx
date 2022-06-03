@@ -9,7 +9,7 @@ const RecipeSingle = ({}) => {
 
   useEffect(() => {
     setIsLoading(true);
-    axios.get("http://localhost:3002/recipies/" + id).then((res) => {
+    axios.get(`http://localhost:3002/recipies/${id}`).then((res) => {
       setRecipe(res.data);
       setIsLoading(false);
     });
