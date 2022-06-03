@@ -6,10 +6,7 @@ const AddRecipes = () => {
     name: "",
     author: "",
     desc: "",
-    country: "",
     img: "",
-    ing: [],
-    ins: "",
   });
   const [ingredients, setIngredients] = useState([
     { id: 1, ingName: "", quantity: "" },

@@ -1,31 +1,40 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import axios from "axios";
 
-const RecipeSingle = ({}) => {
-  const { id } = useParams();
-  const [recipe, setRecipe] = useState();
+const RecipeSingle = () => {
+  const id = useParams().id;
+  const [recipe, setRecipe] = useState({});
   const [isLoading, setIsLoading] = useState(false);
 
+  const fetchData = () => {
+    axios
+      .get(`http://localhost:3002/recipies/${id}`)
+      .then((res) => {
+        console.log(res.data);
+        setRecipe(res.data);
+        setIsLoading(false);
+      })
+      .catch((err) => console.log(err));
+  };
+
   useEffect(() => {
-    setIsLoading(true);
-    axios.get(`http://localhost:3002/recipies/${id}`).then((res) => {
-      setRecipe(res.data);
-      setIsLoading(false);
-    });
-  }, []);
+    console.log(id);
+    fetchData();
+  }, [id]);
 
   if (isLoading) {
     return <p>Loading...</p>;
   }
+
   return (
     <div className="recipe-container">
       <div className="recipe-intro">
         <h2>{recipe.name}</h2>
         <img src={recipe.img} alt={recipe.name} />
-        <p>{recipe.desc}</p>
+        {/* <p>{recipe.desc}</p> */}
         <h3>Ingredients: </h3>
-        {recipe.ingredients.map((ingredient) => (
+        {recipe.ingredients?.map((ingredient) => (
           <p key={ingredient.id}>
             {ingredient.quantity}-{ingredient.ingredient}
           </p>

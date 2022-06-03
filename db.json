@@ -3,11 +3,8 @@
     {
       "name": "Pizza",
       "author": "Anupa",
-      "des": "",
       "country_code": "IT",
       "img": "https://images.unsplash.com/photo-1576458088443-04a19bb13da6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGl6emElMjBtb3hlcnJlbGxhJTIwbXVzaHJvbXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
-      "ing": [],
-      "ins": "",
       "desc": "Pizza is one of the most sought-after dishes of Italian cuisine and is one of the easy dishes that you can prepare at home for your loved ones.",
       "ingredients": [
         {
@@ -82,11 +79,8 @@
     {
       "name": "Momo",
       "author": "Anupa",
-      "des": "",
       "country_code": "NP",
       "img": "https://www.tiffinboxfood.com/wp-content/uploads/2020/03/chicken-momo-1.jpg",
-      "ing": [],
-      "ins": "",
       "desc": "Momo is one of Nepal’s most popular dishes which can be eaten as an entree or as mains. It’s a dumpling filled with meat or vegetables and eaten with tomato pickle.",
       "ingredients": [
         {
@@ -174,8 +168,6 @@
       "desc": "Finnish Salmon Soup, or Lohikeitto, is a simple Nordic salmon chowder made with a light cream broth, melt-in-your-mouth chunks of salmon, and tons of fresh dill.",
       "country_code": "FIN",
       "img": "https://theviewfromgreatisland.com/wp-content/uploads/2017/04/Finnish-Salmon-Soup-6404-March-18-2017.jpg",
-      "ing": [],
-      "ins": "",
       "ingredients": [
         {
           "id": 1,
@@ -228,8 +220,66 @@
           "quantity": "5 cups"
         }
       ],
-      "instruction": "Remove the skin from the salmon and cut into largish chunks. Remove any small pin bones and discard. Reserve the skin.\nMelt the butter in a soup pot and saute the leeks for 10 minutes, or until nice and soft.\nWhile the leeks are cooking, put 5 cups of water and the reserved fish skin in a saucepan and bring to a boil, turn down the heat and simmer gently for 10 minutes. Note: if you are using fish stock you can skip this step.\nStrain the broth and add to the pan with the leeks, along with the potatoes, carrots, and half of the fresh dill. Cook for another 10 minutes, or until the potatoes are just tender.\nAdd the salmon chunks to the soup along with the cream and allspice, and gently simmer on low heat until cooked through, just a few minutes. Add the remaining dill, and salt and pepper to taste.\n",
+      "instruction": "Remove the skin from the salmon and cut into largish chunks. Remove any small pin bones and discard. Reserve the skin.Melt the butter in a soup pot and saute the leeks for 10 minutes, or until nice and soft.While the leeks are cooking, put 5 cups of water and the reserved fish skin in a saucepan and bring to a boil, turn down the heat and simmer gently for 10 minutes. Note: if you are using fish stock you can skip this step.Strain the broth and add to the pan with the leeks, along with the potatoes, carrots, and half of the fresh dill. Cook for another 10 minutes, or until the potatoes are just tender.Add the salmon chunks to the soup along with the cream and allspice, and gently simmer on low heat until cooked through, just a few minutes. Add the remaining dill, and salt and pepper to taste.",
       "id": 3
+    },
+
+    {
+      "name": "Pancakes",
+      "author": "C R Henning",
+      "desc": "Swedish pancakes are made from a thin, egg-rich batter that's cooked in a skillet to produce thin cakes that are rolled up or folded.",
+      "country": "",
+      "img": "https://www.thespruceeats.com/thmb/3YRMbWLKuiuIcd7h_hPkP8pSKlY=/1500x844/smart/filters:no_upscale()/swedishpancakes-5ba986abc9e77c0050a88262.jpg",
+      "country_code": "SWE",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingName": "egg",
+          "quantity": "1"
+        },
+        {
+          "id": 2,
+          "ingName": "milk",
+          "quantity": "1 cup"
+        },
+        {
+          "id": 3,
+          "ingName": "all-purpose flour",
+          "quantity": "1/2 cup"
+        },
+        {
+          "id": 4,
+          "ingName": "white sugar",
+          "quantity": "2 tbsp"
+        },
+        {
+          "id": 5,
+          "ingName": "vanilla extract",
+          "quantity": "1/8 tsp"
+        },
+        {
+          "id": 6,
+          "ingName": "ground nutmeg",
+          "quantity": "1/8 tsp"
+        },
+        {
+          "id": 7,
+          "ingName": "salt",
+          "quantity": "5/8 tsp"
+        },
+        {
+          "id": 8,
+          "ingName": "melted butter",
+          "quantity": "2 tbsp"
+        },
+        {
+          "id": 9,
+          "ingName": "butter",
+          "quantity": "1/4 tsp"
+        }
+      ],
+      "instruction": "Beat eggs in a large bowl until smooth. Add milk, flour, sugar, vanilla extract, nutmeg, and salt; whisk until just combined. Stir in 1/2 cup melted butter until batter is very thin and slightly lumpy.\\nHeat a nonstick griddle over medium-high heat. Brush generously with 1 teaspoon butter. Pour batter onto the griddle to make 6-inch pancakes. Cook until bubbles form and the edges are dry, 30 seconds to 1 minute. Flip and cook until the other side is dry, 30 seconds to 1 minute. Repeat with remaining batter.",
+      "id": 5
     }
   ]
 }

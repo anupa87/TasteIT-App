@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const RecipeCard = ({ name, desc, img, country_code }) => {
+const RecipeCard = ({ id, name, desc, img, country_code }) => {
   const [flag, setFlag] = useState(
     "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/No_flag.svg/225px-No_flag.svg.png?20220314051100"
   );
@@ -20,7 +20,7 @@ const RecipeCard = ({ name, desc, img, country_code }) => {
       <h3 className="recipe-card-title">{name}</h3>
       <p className="recipe-card-content">{desc}</p>
       <div className="recipe-card-link">
-        <Link to={`${name}`}>See more &gt; &gt;</Link>
+        <Link to={`/browse_recipes/${id}/${name}`}>See more &gt; &gt;</Link>
       </div>
     </div>
   );

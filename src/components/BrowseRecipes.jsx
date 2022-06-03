@@ -3,7 +3,6 @@ import axios from "axios";
 
 import RecipeCard from "./RecipeCard";
 
-
 const BrowseRecipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [countries, setCountries] = useState([]);
