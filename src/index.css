@@ -29,7 +29,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: 1px 2px 4px #333;
 }
 
@@ -88,9 +88,18 @@ h2 {
   flex-direction: column;
   text-align: center;
   font-size: small;
-  justify-content: center;
-  padding: 2rem;
+  padding: 1.5rem;
 }
+.social-media-icon {
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.facebook-icon {
+  padding-right: 0.5rem;
+  color: #4968ad;
+}
+
 /* footer ends */
 /* home page starts */
 .intro-video {
@@ -223,3 +232,28 @@ select {
   font-size: 14px;
 }
 /* add recipes page ends */
+/* recipeSinge starts */
+.recipe-container {
+  margin: 0 4rem;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recipe-img {
+  width: 400px;
+  height: 400px;
+}
+.recipe-desc {
+  padding-top: 1.5rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+.recipe-detail {
+  padding-left: 5rem;
+  padding-top: 4rem;
+  line-height: 1.5;
+  justify-content: center;
+  text-align: justify;
+}
